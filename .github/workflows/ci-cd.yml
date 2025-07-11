@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: 📦 Install dependencies (fix peer conflict)
+      - name: 📦 Install dependencies
         working-directory: ./Ql_Student
         run: npm install --legacy-peer-deps
 
@@ -54,6 +54,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Ql_Student/dist/ql-student
+          publish_dir: ./Ql_Student/dist/ql-student/browser
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
