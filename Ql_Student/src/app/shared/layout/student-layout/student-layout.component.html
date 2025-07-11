@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4 shadow-sm">
+  <a class="navbar-brand fw-bold" routerLink="/student">
+    🎓 Student Portal
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#studentNavbar"
+    aria-controls="studentNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="studentNavbar">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/student" routerLinkActive="active">🏠 Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/student/user-info" routerLinkActive="active">👤 Thông tin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/student/profile" routerLinkActive="active">✏️ Cập nhật</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/student/register-subjects" routerLinkActive="active">📝 Đăng ký môn</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/student/schedule-score" routerLinkActive="active">📅 Lịch & điểm</a>
+      </li>
+    </ul>
+
+    <!-- ✅ User email -->
+    <span class="navbar-text text-white me-3 fw-medium">
+      👋 {{ userEmail }}
+    </span>
+
+    <button class="btn btn-outline-light btn-sm" (click)="logout()">
+      🔒 Đăng xuất
+    </button>
+  </div>
+</nav>
+
+<!-- Nội dung trang -->
+<div class="container py-4">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,84 @@
+<div class="container py-4">
+  <h2 class="mb-4 text-primary">🎓 Admin Dashboard</h2>
+
+  <!-- Thống kê nhanh -->
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="card text-white bg-primary h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tổng Sinh Viên</h5>
+          <p class="display-6 fw-bold">{{ totalStudents }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 text-center">
+          <a routerLink="/admin/students" class="text-white text-decoration-underline">👨‍🎓 Quản lý sinh viên</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-white bg-success h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tổng Môn Học</h5>
+          <p class="display-6 fw-bold">{{ totalSubjects }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 text-center">
+          <a routerLink="/admin/subjects" class="text-white text-decoration-underline">📚 Quản lý môn học</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-white bg-info h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tổng Điểm Đã Nhập</h5>
+          <p class="display-6 fw-bold">{{ totalScores }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 text-center">
+          <a routerLink="/admin/scores" class="text-white text-decoration-underline">📊 Xem điểm</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-white bg-warning h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chưa Nhập Điểm</h5>
+          <p class="display-6 fw-bold">{{ pendingScores }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-top-0 text-center">
+          <a routerLink="/admin/scores/input" class="text-white text-decoration-underline">✍️ Nhập điểm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-5" />
+
+  <!-- Hướng dẫn và hình ảnh -->
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h5 class="text-secondary">📌 Hướng dẫn nhanh</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          ➕ <strong>Thêm sinh viên:</strong> Vào <em>Sinh viên > Thêm</em>
+        </li>
+        <li class="list-group-item">
+          🧾 <strong>Nhập điểm:</strong> Chọn mục <em>Điểm > Nhập điểm</em>
+        </li>
+        <li class="list-group-item">
+          📊 <strong>Xem điểm:</strong> Xem danh sách điểm sinh viên theo môn học
+        </li>
+        <li class="list-group-item">
+          👮‍♂️ <strong>Phân quyền:</strong> Đã tích hợp xác thực & phân quyền
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/3039/3039389.png"
+           alt="Admin illustration"
+           class="img-fluid"
+           style="max-height: 240px;" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">📚 Danh sách sinh viên đăng ký môn học</h2>
+    <button class="btn btn-outline-secondary" (click)="goBack()">
+      ← Quay lại
+    </button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered align-middle">
+      <thead class="table-dark text-center">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Mã SV</th>
+          <th scope="col">Họ tên</th>
+          <th scope="col">Lớp</th>
+          <th scope="col">Khoá học</th>
+          <th scope="col">Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students; let i = index">
+          <td class="text-center">{{ i + 1 }}</td>
+          <td>{{ student.studentCode }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.class }}</td>
+          <td>{{ student.course }}</td>
+          <td class="text-center">
+            <button
+              class="btn btn-sm btn-danger"
+              (click)="unregisterStudent(student.id)"
+            >
+              ❌ Huỷ đăng ký
+            </button>
+          </td>
+        </tr>
+        <tr *ngIf="students.length === 0">
+          <td colspan="6" class="text-center text-muted">
+            Không có sinh viên nào đăng ký.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

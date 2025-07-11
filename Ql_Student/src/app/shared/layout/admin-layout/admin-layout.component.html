@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm px-4 py-2">
+  <a class="navbar-brand fw-bold" routerLink="/admin">🎓 Student Admin</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          📊 Dashboard
+        </a>
+      </li>
+
+      <!-- Students -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="studentsDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          👨‍🎓 Students
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/admin/students">Danh sách sinh viên</a></li>
+          <li><a class="dropdown-item" routerLink="/admin/students/add">Thêm sinh viên</a></li>
+        </ul>
+      </li>
+
+      <!-- Subjects -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="subjectsDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          📚 Subjects
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/admin/subjects">Danh sách môn học</a></li>
+          <li><a class="dropdown-item" routerLink="/admin/subjects/add">Thêm môn học</a></li>
+        </ul>
+      </li>
+
+      <!-- Scores -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="scoresDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          📝 Scores
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/admin/scores">Xem điểm</a></li>
+          <li><a class="dropdown-item" routerLink="/admin/scores/input">Nhập điểm</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Bên phải: User -->
+    <div class="d-flex align-items-center">
+      <span class="navbar-text text-white me-3">
+        👋 Xin chào, <strong>{{ userName }}</strong>
+      </span>
+      <button class="btn btn-outline-light btn-sm" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Nội dung trang -->
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>

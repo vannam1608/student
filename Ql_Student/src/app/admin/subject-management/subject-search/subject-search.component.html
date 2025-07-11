@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <h3 class="mb-4">🔍 Tìm kiếm Môn Học theo ID</h3>
+
+  <div class="row g-3 align-items-center mb-4">
+    <div class="col-auto">
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Nhập Subject ID"
+        [(ngModel)]="subjectId"
+        style="width: 200px"
+      />
+    </div>
+    <div class="col-auto">
+      <button class="btn btn-primary" (click)="search()">Tìm kiếm</button>
+    </div>
+  </div>
+  <div *ngIf="subject" class="mt-3">
+  <button class="btn btn-secondary" (click)="clearSearch()">↩ Quay lại danh sách</button>
+</div>
+
+  <div *ngIf="error" class="alert alert-danger w-50">{{ error }}</div>
+
+  <div *ngIf="subject" class="card shadow w-75">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">{{ subject.name }}</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">🎯 <strong>ID:</strong> {{ subject.id }}</li>
+        <li class="list-group-item">🎓 <strong>Tín chỉ:</strong> {{ subject.credit }}</li>
+        <li class="list-group-item">📚 <strong>Số buổi học:</strong> {{ subject.sessionCount }}</li>
+        <li class="list-group-item">🗓️ <strong>Ngày bắt đầu:</strong> {{ subject.startDate }}</li>
+        <li class="list-group-item">🕒 <strong>Giờ học:</strong> {{ subject.studyTime }}</li>
+        <li class="list-group-item">📝 <strong>Ngày thi:</strong> {{ subject.examDate }} - {{ subject.examTime }}</li>
+        <li class="list-group-item">
+          📊 <strong>Tỷ trọng:</strong> Quá trình {{ subject.processWeight }}%, Thành phần {{ subject.componentWeight }}%
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

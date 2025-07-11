@@ -1,0 +1,83 @@
+<div class="container mt-4">
+  <h3>Danh sách điểm theo từng sinh viên</h3>
+
+  <!-- Tìm kiếm -->
+  <div class="input-group mb-3 w-50">
+    <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="applyFilter()" class="form-control" placeholder="🔍 Tìm theo mã SV hoặc tên SV" />
+  </div>
+
+  <!-- Loading -->
+  <div *ngIf="loading" class="text-center my-5">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+
+  <!-- Dữ liệu -->
+  <ng-container *ngIf="!loading && pagedGroups.length">
+    <div *ngFor="let group of pagedGroups; let idx = index" class="mb-5">
+      <h5 class="text-primary">
+        {{ (currentPage - 1) * pageSize + idx + 1 }}. Sinh viên: <strong>{{ group.studentName }}</strong> (Mã SV: {{ group.studentId }})
+      </h5>
+
+      <table class="table table-bordered table-striped">
+        <thead class="table-secondary">
+          <tr>
+            <th>#</th>
+            <th>Môn học</th>
+            <th>Quá trình</th>
+            <th>Thành phần</th>
+            <th>Điểm cuối</th>
+            <th>Đậu</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let score of group.scores; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ score.subjectName }}</td>
+            <td>{{ score.processPoint ?? '-' }}</td>
+            <td>{{ score.componentPoint ?? '-' }}</td>
+            <td>{{ score.finalPoint ?? '-' }}</td>
+            <td>
+              <span [ngClass]="{
+                  'text-success': score.isPassed === true,
+                  'text-danger': score.isPassed === false,
+                  'text-muted': score.isPassed === null
+                }">
+                {{ score.isPassed === true ? '✔' : score.isPassed === false ? '✘' : '-' }}
+              </span>
+            </td>
+            <td>
+              <a class="btn btn-sm btn-primary"
+                 [routerLink]="['/admin/scores/input']"
+                 [queryParams]="{ studentId: score.studentId, subjectId: score.subjectId }">
+                Chỉnh sửa
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <nav *ngIf="totalPages > 1" class="mt-4">
+      <ul class="pagination justify-content-center">
+        <li class="page-item" [class.disabled]="currentPage === 1">
+          <a class="page-link" (click)="goToPage(currentPage - 1)">«</a>
+        </li>
+        <li class="page-item"
+            *ngFor="let p of [].constructor(totalPages); let i = index"
+            [class.active]="currentPage === i + 1">
+          <a class="page-link" (click)="goToPage(i + 1)">{{ i + 1 }}</a>
+        </li>
+        <li class="page-item" [class.disabled]="currentPage === totalPages">
+          <a class="page-link" (click)="goToPage(currentPage + 1)">»</a>
+        </li>
+      </ul>
+    </nav>
+  </ng-container>
+
+  <!-- Không có dữ liệu -->
+  <div *ngIf="!loading && !pagedGroups.length" class="alert alert-info">
+    Không có dữ liệu điểm nào.
+  </div>
+</div>

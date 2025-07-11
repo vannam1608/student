@@ -1,0 +1,42 @@
+<div class="d-flex align-items-center justify-content-center vh-100 bg-light">
+  <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+    <div class="text-center mb-4">
+      <h3 class="fw-bold mb-0">🎓 Student Portal</h3>
+      <p class="text-muted mb-0">Đăng nhập hệ thống</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="mb-3">
+        <label for="email" class="form-label">📧 Email</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          class="form-control"
+          [class.is-invalid]="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+        />
+        <div class="invalid-feedback">Email không hợp lệ</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">🔐 Mật khẩu</label>
+        <input
+          type="password"
+          id="password"
+          formControlName="password"
+          class="form-control"
+          [class.is-invalid]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+        />
+        <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
+      </div>
+
+      <div *ngIf="error" class="alert alert-danger py-2">{{ error }}</div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary fw-bold" [disabled]="loginForm.invalid">
+          Đăng nhập
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

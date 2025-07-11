@@ -1,0 +1,69 @@
+<h2 class="mt-4 text-primary fw-bold">🎓 Student Dashboard</h2>
+<hr class="mb-4" />
+
+<div class="row g-4">
+  <!-- Thông tin cá nhân -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <a class="text-decoration-none" [routerLink]="['/student/user-info']">
+      <div class="card bg-light border-0 shadow-sm h-100 hover-card">
+        <div class="card-body text-center">
+          <div class="mb-2 text-warning display-6">👤</div>
+          <h5 class="card-title fw-semibold">Thông tin cá nhân</h5>
+          <p class="card-text text-muted">Xem thông tin chi tiết sinh viên</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Cập nhật hồ sơ -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <a class="text-decoration-none" [routerLink]="['/student/profile']">
+      <div class="card bg-light border-0 shadow-sm h-100 hover-card">
+        <div class="card-body text-center">
+          <div class="mb-2 text-primary display-6">✏️</div>
+          <h5 class="card-title fw-semibold">Cập nhật hồ sơ</h5>
+          <p class="card-text text-muted">Chỉnh sửa thông tin cá nhân</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Đăng ký môn học -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <a class="text-decoration-none" [routerLink]="['/student/register-subjects']">
+      <div class="card bg-light border-0 shadow-sm h-100 hover-card">
+        <div class="card-body text-center">
+          <div class="mb-2 text-success display-6">📝</div>
+          <h5 class="card-title fw-semibold">Đăng ký môn học</h5>
+          <p class="card-text text-muted">Lựa chọn và đăng ký môn</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Lịch học & Điểm -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <a class="text-decoration-none" [routerLink]="['/student/schedule-score']">
+      <div class="card bg-light border-0 shadow-sm h-100 hover-card">
+        <div class="card-body text-center">
+          <div class="mb-2 text-info display-6">📅</div>
+          <h5 class="card-title fw-semibold">Lịch học & Điểm</h5>
+          <p class="card-text text-muted">Xem lịch học, lịch thi và điểm</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Tiến độ học tập -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <a class="text-decoration-none" [routerLink]="['/student/progress']">
+      <div class="card bg-light border-0 shadow-sm h-100 hover-card">
+        <div class="card-body text-center">
+          <div class="mb-2 text-secondary display-6">📈</div>
+          <h5 class="card-title fw-semibold">Tiến độ học tập</h5>
+          <p class="card-text text-muted">Số môn đã học, GPA, tỉ lệ qua môn</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container mt-5">
+  <div class="card shadow">
+    <div class="card-body">
+      <h4 class="card-title mb-4">📚 Đăng ký môn học cho sinh viên</h4>
+
+      <!-- ✅ Thông báo -->
+      <div *ngIf="message" class="alert alert-info">{{ message }}</div>
+
+      <!-- ✅ Form -->
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="studentId" class="form-label">👤 Chọn sinh viên</label>
+          <select class="form-select" formControlName="studentId" id="studentId">
+            <option value="">-- Vui lòng chọn sinh viên --</option>
+            <option *ngFor="let student of students" [value]="student.id">
+              {{ student.name }} ({{ student.studentCode }})
+            </option>
+          </select>
+          <div *ngIf="form.get('studentId')?.invalid && form.get('studentId')?.touched" class="text-danger mt-1">
+            ⚠️ Vui lòng chọn sinh viên
+          </div>
+        </div>
+
+        <!-- ✅ Nút hành động -->
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn btn-success" [disabled]="form.invalid">
+            ➕ Đăng ký
+          </button>
+          <button type="button" class="btn btn-outline-secondary" (click)="goBack()">
+            ⬅️ Quay lại
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

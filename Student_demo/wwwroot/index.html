@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý điểm sinh viên</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        nav button {
+            margin: 5px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            nav button.active {
+                background-color: #0056b3;
+            }
+
+        section {
+            display: none;
+            margin-top: 20px;
+        }
+
+            section.active {
+                display: block;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        input, button {
+            margin-top: 10px;
+        }
+
+        tr.selected {
+            background-color: #d0ebff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quản lý điểm sinh viên</h1>
+
+    <nav>
+        <button onclick="showTab('students')">Sinh viên</button>
+        <button onclick="showTab('subjects')">Môn học</button>
+        <button onclick="showTab('register')">Đăng ký môn học</button>
+        <button onclick="showTab('scores')">Quản lý điểm</button>
+        <button onclick="showTab('schedule')">Lịch học / thi</button>
+        <button onclick="showTab('profile')">Cập nhật thông tin</button>
+        <button onclick="logout()">Đăng xuất</button>
+    </nav>
+
+    <!-- 1. Quản lý sinh viên -->
+    <!-- 1. Quản lý sinh viên -->
+    <section id="students" class="active">
+        <h2>Danh sách sinh viên</h2>
+        <button onclick="loadStudents()">Tải danh sách</button>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Mã SV</th>
+                    <th>Tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Lớp</th>
+                    <th>Khoá</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h3>Thêm / Sửa / Xoá sinh viên</h3>
+        <input type="number" id="stuId" placeholder="ID (để sửa/xoá)">
+        <input type="text" id="stuCode" placeholder="Mã sinh viên">
+        <input type="text" id="stuName" placeholder="Tên sinh viên">
+        <input type="text" id="stuGender" placeholder="Giới tính">
+        <input type="date" id="stuBirthDate">
+        <input type="text" id="stuClass" placeholder="Lớp">
+        <input type="text" id="stuCourse" placeholder="Khoá">
+        <br>
+        <button onclick="addStudent()">Thêm</button>
+        <button onclick="updateStudent()">Sửa</button>
+        <button onclick="deleteStudent()">Xoá</button>
+    </section>
+
+
+
+    <!-- 2. Quản lý môn học -->
+    <section id="subjects">
+        <h2>Danh sách môn học</h2>
+        <button onclick="loadSubjects()">Tải danh sách</button>
+        <table id="subjectTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Số tiết</th>
+                    <th>% QT</th>
+                    <th>% CK</th>
+                    <th>Ngày bắt đầu</th>
+                    <th>Giờ học</th>
+                    <th>Ngày thi</th>
+                    <th>Giờ thi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- 3. Đăng ký môn học -->
+    <section id="register">
+        <h2>Đăng ký / Huỷ môn học</h2>
+        <input type="number" id="regStudentId" placeholder="ID sinh viên">
+        <input type="number" id="regSubjectId" placeholder="ID môn học">
+        <button onclick="registerSubject()">Đăng ký</button>
+        <button onclick="unregisterSubject()">Huỷ đăng ký</button>
+    </section>
+
+    <!-- 4. Quản lý điểm -->
+    <section id="scores">
+        <h2>Điểm số sinh viên</h2>
+        <input type="number" id="scoreStudentId" placeholder="ID sinh viên">
+        <button onclick="loadScores()">Xem điểm</button>
+        <table id="scoreTable">
+            <thead><tr><th>Môn</th><th>QT</th><th>CK</th><th>TB</th><th>Đậu?</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- 5. Lịch học / thi -->
+    <section id="schedule">
+        <h2>Lịch học / thi</h2>
+        <input type="number" id="scheduleStudentId" placeholder="ID sinh viên">
+        <button onclick="loadSchedule()">Xem lịch</button>
+        <table id="scheduleTable">
+            <thead><tr><th>Môn</th><th>Ngày học</th><th>Giờ học</th><th>Ngày thi</th><th>Giờ thi</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- 6. Cập nhật thông tin cá nhân -->
+    <section id="profile">
+        <h2>Cập nhật thông tin cá nhân</h2>
+        <input type="number" id="profileId" placeholder="ID sinh viên"><br>
+        <input type="text" id="profileCode" placeholder="Mã sinh viên"><br>
+        <input type="text" id="profileName" placeholder="Tên"><br>
+        <input type="text" id="profileGender" placeholder="Giới tính"><br>
+        <input type="date" id="profileBirthDate" placeholder="Ngày sinh"><br>
+        <input type="text" id="profileClass" placeholder="Lớp"><br>
+        <input type="text" id="profileCourse" placeholder="Khóa"><br>
+        <button onclick="updateProfile()">Cập nhật</button>
+    </section>
+
+
+    <!-- Script xử lý -->
+    <script>
+        const token = localStorage.getItem("token");
+        if (!token) window.location.href = "login.html";
+
+        function logout() {
+            localStorage.removeItem("token");
+            window.location.href = "login.html";
+        }
+
+        function showTab(id) {
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            document.querySelector(`#${id}`).classList.add('active');
+            document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        /* ----------------------  STUDENT HELPER  ---------------------- */
+        function getStudentForm() {
+            return {
+                studentCode: document.getElementById('stuCode').value.trim(),
+                name: document.getElementById('stuName').value.trim(),
+                gender: document.getElementById('stuGender').value.trim(),
+                dateOfBirth: document.getElementById('stuBirthDate').value || null,
+                class: document.getElementById('stuClass').value.trim(),
+                course: document.getElementById('stuCourse').value.trim()
+            };
+        }
+
+        function clearStudentForm() {
+            ['stuId', 'stuCode', 'stuName', 'stuGender', 'stuBirthDate', 'stuClass', 'stuCourse']
+                .forEach(id => document.getElementById(id).value = '');
+        }
+
+        /* ----------------------  LOAD LIST  --------------------------- */
+        async function loadStudents() {
+            const token = localStorage.getItem("token");
+            try {
+                const res = await fetch('/api/Student', {
+                    headers: { 'Authorization': 'Bearer ' + token }
+                });
+                const data = await res.json();
+
+                if (!res.ok) return alert(data.message || "Lỗi khi tải danh sách sinh viên.");
+
+                const tbody = document.querySelector('#studentTable tbody');
+                tbody.innerHTML = '';
+
+                data.data.forEach(s => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${s.id}</td>
+                        <td>${s.code}</td>
+                        <td>${s.name}</td>
+                        <td>${s.gender}</td>
+                        <td>${new Date(s.birthDate).toLocaleDateString()}</td>
+                        <td>${s.class}</td>
+                        <td>${s.course}</td>
+                    `;
+                    row.addEventListener('click', () => {
+                        document.querySelectorAll('#studentTable tbody tr').forEach(r => r.classList.remove('selected'));
+                        row.classList.add('selected');
+                        fillStudentForm(s);
+                    });
+                    tbody.appendChild(row);
+                });
+            } catch (err) {
+                alert("Không thể tải danh sách sinh viên: " + err.message);
+            }
+        }
+
+
+        /* ----------------------  ADD  --------------------------------- */
+        async function addStudent() {
+            const body = getStudentForm();
+
+            // ✅ Thêm dòng này để kiểm tra dữ liệu trước khi gửi
+            console.log("studentCode:", body.studentCode, "| name:", body.name);
+
+            if (!body.studentCode?.trim() || !body.name?.trim()) {
+                alert("Mã SV & Tên không được trống!");
+                return;
+            }
+
+            const res = await fetch('/api/Student/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + token
+                },
+                body: JSON.stringify(body)
+            });
+
+            const data = await res.json();
+            alert(res.ok ? "Thêm thành công!" : (data.message || "Lỗi thêm sinh viên"));
+            if (res.ok) loadStudents();
+        }
+
+        /* ----------------------  DELETE  ------------------------------- */
+        async function deleteStudent() {
+            const id = document.getElementById('stuId').value;
+            if (!id) return alert('Nhập ID để xoá!');
+            if (!confirm('Xác nhận xoá sinh viên?')) return;
+
+            try {
+                const res = await fetch(`/api/Student/${id}`, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': 'Bearer ' + token }
+                });
+                const data = await res.json();
+                alert(res.ok ? 'Đã xoá!' : data.message || 'Xoá thất bại!');
+                if (res.ok) { clearStudentForm(); loadStudents(); }
+            } catch (e) { console.error(e); alert('Lỗi xoá sinh viên!'); }
+        }
+
+
+        async function loadSubjects() {
+            const res = await fetch('/api/Subject', { headers: { 'Authorization': 'Bearer ' + token } });
+            const data = await res.json();
+            const tbody = document.querySelector('#subjectTable tbody');
+            tbody.innerHTML = '';
+            data.data.forEach(s => {
+                tbody.innerHTML += `<tr>
+                                    <td>${s.id}</td><td>${s.name}</td><td>${s.sessionCount}</td>
+                                    <td>${s.processWeight}%</td><td>${s.componentWeight}%</td>
+                                    <td>${s.startDate ? new Date(s.startDate).toLocaleDateString() : ''}</td>
+                                    <td>${s.studyTime || ''}</td><td>${s.examDate ? new Date(s.examDate).toLocaleDateString() : ''}</td>
+                                    <td>${s.examTime || ''}</td>
+                                </tr>`;
+            });
+        }
+
+        async function registerSubject() {
+            const studentId = document.getElementById('regStudentId').value;
+            const subjectId = document.getElementById('regSubjectId').value;
+
+            if (!studentId || !subjectId) {
+                alert("Vui lòng nhập đầy đủ ID sinh viên và môn học.");
+                return;
+            }
+
+            const token = localStorage.getItem("token");
+
+            try {
+                const res = await fetch('/api/subject/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + token
+                    },
+                    body: JSON.stringify({ studentId: Number(studentId), subjectId: Number(subjectId) })
+                });
+
+                let message;
+
+                // ✅ Đọc phản hồi an toàn
+                const contentType = res.headers.get("content-type");
+                if (contentType && contentType.includes("application/json")) {
+                    const data = await res.json();
+                    message = data.message || data || "Thành công";
+                } else {
+                    message = await res.text();
+                }
+
+                // ✅ Phản hồi cuối cùng
+                if (res.ok) {
+                    alert("✅ Đăng ký thành công");
+                } else {
+                    alert("❌ Đăng ký thất bại: " + message);
+                }
+
+            } catch (err) {
+                console.error("Lỗi kết nối:", err);
+                alert("❌ Không thể kết nối tới máy chủ: " + err.message);
+            }
+        }
+
+
+
+
+
+
+        async function unregisterSubject() {
+            const studentId = document.getElementById('regStudentId').value;
+            const subjectId = document.getElementById('regSubjectId').value;
+            const res = await fetch(`/api/Subject/${subjectId}/unregister/${studentId}`, {
+                method: 'DELETE',
+                headers: { 'Authorization': 'Bearer ' + token }
+            });
+            const data = await res.json();
+            alert(res.ok ? "Huỷ đăng ký thành công" : data.message);
+        }
+
+        async function loadScores() {
+            const id = document.getElementById('scoreStudentId').value;
+            const res = await fetch(`/api/Score/student/${id}`, {
+                headers: { 'Authorization': 'Bearer ' + token }
+            });
+            const data = await res.json();
+            const tbody = document.querySelector('#scoreTable tbody');
+            tbody.innerHTML = '';
+            data.data.forEach(s => {
+                tbody.innerHTML += `<tr>
+                                    <td>${s.subjectName}</td><td>${s.processPoint}</td><td>${s.componentPoint}</td>
+                                    <td>${s.finalPoint}</td><td>${s.isPassed ? '✅' : '❌'}</td>
+                                </tr>`;
+            });
+        }
+
+        async function loadSchedule() {
+            const id = document.getElementById('scheduleStudentId').value;
+            const res = await fetch(`/api/Subject/schedule/${id}`, {
+                headers: { 'Authorization': 'Bearer ' + token }
+            });
+            const data = await res.json();
+            const tbody = document.querySelector('#scheduleTable tbody');
+            tbody.innerHTML = '';
+            data.data.forEach(s => {
+                tbody.innerHTML += `<tr>
+                                    <td>${s.subjectName}</td>
+                                    <td>${s.startDate ? new Date(s.startDate).toLocaleDateString() : ''}</td>
+                                    <td>${s.studyTime || ''}</td>
+                                    <td>${s.examDate ? new Date(s.examDate).toLocaleDateString() : ''}</td>
+                                    <td>${s.examTime || ''}</td>
+                                </tr>`;
+            });
+        }
+
+        async function updateProfile() {
+            const token = localStorage.getItem("token");
+
+            const id = document.getElementById('profileId').value;
+            const code = document.getElementById('profileCode').value.trim();
+            const name = document.getElementById('profileName').value.trim();
+            const gender = document.getElementById('profileGender').value.trim();
+            const birthDate = document.getElementById('profileBirthDate').value;
+            const className = document.getElementById('profileClass').value.trim();
+            const course = document.getElementById('profileCourse').value.trim();
+
+            if (!id || !code || !name || !gender || !birthDate || !className || !course) {
+                alert("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/Student/update-profile/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + token
+                    },
+                    body: JSON.stringify({
+                        id: parseInt(id),
+                        code,
+                        name,
+                        gender,
+                        birthDate,
+                        class: className,
+                        course
+                    })
+                });
+
+                const text = await res.text();
+                alert(res.ok ? "✅ Cập nhật thành công!" : text);
+            } catch (error) {
+                alert("❌ Không thể kết nối tới máy chủ: " + error.message);
+            }
+        }
+
+
+
+        function fillStudentForm(s) {
+            document.getElementById('stuId').value = s.id;
+            document.getElementById('stuCode').value = s.code;
+            document.getElementById('stuName').value = s.name;
+            document.getElementById('stuGender').value = s.gender;
+            document.getElementById('stuBirthDate').value = s.birthDate?.split('T')[0]; // ISO yyyy-MM-dd
+            document.getElementById('stuClass').value = s.class;
+            document.getElementById('stuCourse').value = s.course;
+        }
+
+    </script>
+</body>
+</html>

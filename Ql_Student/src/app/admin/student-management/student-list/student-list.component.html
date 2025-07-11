@@ -1,0 +1,83 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">📋 Danh sách sinh viên</h2>
+    <a class="btn btn-primary" [routerLink]="['/admin/students/add']">➕ Thêm sinh viên</a>
+  </div>
+
+  <!-- Tìm kiếm & Lọc -->
+  <div class="row mb-3">
+    <div class="col-md-6 mb-2">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="🔍 Tìm kiếm theo tên hoặc mã SV..."
+        [(ngModel)]="searchKeyword"
+        (input)="filterStudents()"
+      />
+    </div>
+    <div class="col-md-4 mb-2">
+      <select class="form-select" [(ngModel)]="selectedClass" (change)="filterStudents()">
+        <option value="">-- Tất cả lớp --</option>
+        <option *ngFor="let cls of uniqueClasses">{{ cls }}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Bảng danh sách -->
+  <div class="table-responsive shadow-sm">
+    <table class="table table-bordered table-hover table-striped align-middle">
+      <thead class="table-dark text-center">
+        <tr>
+          <th>#</th>
+          <th>Mã SV</th>
+          <th>Họ tên</th>
+          <th>Giới tính</th>
+          <th>Ngày sinh</th>
+          <th>Lớp</th>
+          <th>Khoá học</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of pagedStudents; let i = index">
+          <td class="text-center">{{ pageSize * (currentPage - 1) + i + 1 }}</td>
+          <td>{{ student.studentCode }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.gender }}</td>
+          <td>{{ student.birthDate | date: 'dd/MM/yyyy' }}</td>
+          <td>{{ student.class }}</td>
+          <td>{{ student.course }}</td>
+          <td class="text-nowrap">
+            <div class="d-flex gap-1">
+              <a [routerLink]="['/admin/students/detail', student.id]" class="btn btn-sm btn-info">👁️</a>
+              <a [routerLink]="['/admin/students/edit', student.id]" class="btn btn-sm btn-warning">✏️</a>
+              <button class="btn btn-sm btn-danger" (click)="delete(student.id)">🗑️</button>
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="pagedStudents.length === 0">
+          <td colspan="8" class="text-center text-muted py-3">⚠️ Không có sinh viên nào phù hợp.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Phân trang -->
+  <nav *ngIf="totalPages > 1" class="mt-3">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <a class="page-link" (click)="changePage(currentPage - 1)">«</a>
+      </li>
+      <li
+        class="page-item"
+        *ngFor="let page of [].constructor(totalPages); let i = index"
+        [class.active]="currentPage === i + 1"
+      >
+        <a class="page-link" (click)="changePage(i + 1)">{{ i + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <a class="page-link" (click)="changePage(currentPage + 1)">»</a>
+      </li>
+    </ul>
+  </nav>
+</div>

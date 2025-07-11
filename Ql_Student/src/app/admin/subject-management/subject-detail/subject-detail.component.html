@@ -1,0 +1,40 @@
+<!-- Khi đang tải -->
+<div *ngIf="loading" class="d-flex justify-content-center align-items-center mt-5">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Đang tải...</span>
+  </div>
+</div>
+
+<!-- Khi đã có dữ liệu -->
+<div class="container mt-5" *ngIf="!loading && subject">
+  <div class="card shadow">
+    <div class="card-body">
+      <h4 class="card-title mb-4">📚 Chi tiết môn học</h4>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>📝 Tên môn:</strong> {{ subject.name }}</li>
+        <li class="list-group-item"><strong>🎓 Tín chỉ:</strong> {{ subject.credit }}</li>
+        <li class="list-group-item"><strong>📚 Số buổi học:</strong> {{ subject.sessionCount }}</li>
+        <li class="list-group-item"><strong>📊 Trọng số quá trình:</strong> {{ subject.processWeight }}%</li>
+        <li class="list-group-item"><strong>📊 Trọng số thành phần:</strong> {{ subject.componentWeight }}%</li>
+        <li class="list-group-item"><strong>📆 Ngày bắt đầu học:</strong> {{ subject.startDate | date: 'dd/MM/yyyy' }}</li>
+        <li class="list-group-item"><strong>🕒 Giờ học:</strong> {{ subject.studyTime }}</li>
+        <li class="list-group-item"><strong>📝 Ngày thi:</strong> {{ subject.examDate | date: 'dd/MM/yyyy' }}</li>
+        <li class="list-group-item"><strong>⏰ Giờ thi:</strong> {{ subject.examTime }}</li>
+      </ul>
+
+      <div class="mt-4 d-flex gap-2">
+        <a class="btn btn-outline-secondary" [routerLink]="['/admin/subjects']">
+          ← Quay lại danh sách
+        </a>
+
+        <a
+          class="btn btn-outline-primary"
+          [routerLink]="['/admin/subjects/edit', subject.id]"
+        >
+          ✏️ Chỉnh sửa
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

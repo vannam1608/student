@@ -1,0 +1,93 @@
+<div class="container mt-4">
+  <h3 class="mb-4 text-primary fw-bold">📄 Thông tin sinh viên</h3>
+
+  <!-- Thông tin sinh viên -->
+  <div class="card shadow-sm mb-3 border-primary">
+    <div class="card-body">
+      <div class="row mb-2">
+        <div class="col-md-6"><strong>🎓 Mã SV:</strong> {{ student?.studentCode }}</div>
+        <div class="col-md-6"><strong>👤 Họ tên:</strong> {{ student?.name }}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6"><strong>🏫 Lớp:</strong> {{ student?.class }}</div>
+        <div class="col-md-6"><strong>📚 Khoá:</strong> {{ student?.course }}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6"><strong>⚧️ Giới tính:</strong> {{ student?.gender }}</div>
+        <div class="col-md-6"><strong>📅 Ngày sinh:</strong> {{ student?.birthDate | date: 'dd/MM/yyyy' }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nút chức năng -->
+  <div class="d-flex gap-2 mb-4">
+    <button class="btn btn-outline-primary" (click)="toggleScores()">
+      {{ showScores ? '👁️‍🗨️ Ẩn điểm số' : '📊 Xem điểm số' }}
+    </button>
+    <button class="btn btn-outline-success" (click)="toggleSchedule()">
+      {{ showSchedule ? '👁️‍🗨️ Ẩn lịch học' : '📅 Xem lịch học' }}
+    </button>
+    <a routerLink="/admin/students" class="btn btn-secondary ms-auto">⬅ Quay lại</a>
+  </div>
+
+  <!-- Bảng điểm -->
+  <div *ngIf="showScores && subjects?.length" class="table-responsive mb-4">
+    <h5 class="text-success fw-bold">✅ Bảng điểm</h5>
+    <table class="table table-bordered table-striped align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Môn học</th>
+          <th>Điểm quá trình</th>
+          <th>Điểm thành phần</th>
+          <th>Điểm cuối</th>
+          <th>Kết quả</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sub of subjects; index as i">
+          <td>{{ i + 1 }}</td>
+          <td>{{ sub.name }}</td>
+          <td>{{ sub.processPoint ?? '-' }}</td>
+          <td>{{ sub.componentPoint ?? '-' }}</td>
+          <td>{{ sub.finalPoint ?? '-' }}</td>
+          <td>
+            <span [ngClass]="{
+              'text-success fw-bold': sub.isPassed === true,
+              'text-danger fw-bold': sub.isPassed === false
+            }">
+              {{ sub.isPassed === true ? '✔ Đậu' : sub.isPassed === false ? '✘ Rớt' : '-' }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bảng lịch học -->
+  <div *ngIf="showSchedule && subjects?.length" class="table-responsive">
+    <h5 class="text-primary fw-bold">📅 Lịch học & thi</h5>
+    <table class="table table-bordered table-striped align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Môn học</th>
+          <th>Ngày bắt đầu</th>
+          <th>Thời gian học</th>
+          <th>Ngày thi</th>
+          <th>Thời gian thi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sub of subjects; index as i">
+          <td>{{ i + 1 }}</td>
+          <td>{{ sub.name }}</td>
+          <td>{{ sub.startDate | date: 'dd/MM/yyyy' }}</td>
+          <td>{{ sub.studyTime }}</td>
+          <td>{{ sub.examDate | date: 'dd/MM/yyyy' }}</td>
+          <td>{{ sub.examTime }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

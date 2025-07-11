@@ -1,0 +1,98 @@
+<div class="container mt-4">
+  <div class="mb-4">
+    <h2 class="fw-bold">{{ isEdit ? '✏️ Cập nhật sinh viên' : '➕ Thêm sinh viên mới' }}</h2>
+    <hr />
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" novalidate class="needs-validation">
+    <div class="row g-3">
+      <!-- Mã sinh viên & Họ tên -->
+      <div class="col-md-6">
+        <label for="studentCode" class="form-label">🎓 Mã sinh viên</label>
+        <input
+          type="text"
+          id="studentCode"
+          formControlName="studentCode"
+          class="form-control"
+          [class.is-invalid]="form.get('studentCode')?.invalid && form.get('studentCode')?.touched"
+        />
+        <div class="invalid-feedback">Vui lòng nhập mã sinh viên</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="name" class="form-label">👤 Họ tên</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-control"
+          [class.is-invalid]="form.get('name')?.invalid && form.get('name')?.touched"
+        />
+        <div class="invalid-feedback">Vui lòng nhập họ tên</div>
+      </div>
+
+      <!-- Giới tính & Ngày sinh -->
+      <div class="col-md-6">
+        <label for="gender" class="form-label">⚧️ Giới tính</label>
+        <select
+          id="gender"
+          formControlName="gender"
+          class="form-select"
+          [class.is-invalid]="form.get('gender')?.invalid && form.get('gender')?.touched"
+        >
+          <option value="">-- Chọn giới tính --</option>
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+        </select>
+        <div class="invalid-feedback">Vui lòng chọn giới tính</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="birthDate" class="form-label">📅 Ngày sinh</label>
+        <input
+          type="date"
+          id="birthDate"
+          formControlName="birthDate"
+          class="form-control"
+          [class.is-invalid]="form.get('birthDate')?.invalid && form.get('birthDate')?.touched"
+        />
+        <div class="invalid-feedback">Vui lòng chọn ngày sinh</div>
+      </div>
+
+      <!-- Lớp & Khoá -->
+      <div class="col-md-6">
+        <label for="class" class="form-label">🏫 Lớp</label>
+        <input
+          type="text"
+          id="class"
+          formControlName="class"
+          class="form-control"
+          [class.is-invalid]="form.get('class')?.invalid && form.get('class')?.touched"
+        />
+        <div class="invalid-feedback">Vui lòng nhập lớp</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="course" class="form-label">📚 Khoá học</label>
+        <input
+          type="text"
+          id="course"
+          formControlName="course"
+          class="form-control"
+          [class.is-invalid]="form.get('course')?.invalid && form.get('course')?.touched"
+        />
+        <div class="invalid-feedback">Vui lòng nhập khoá học</div>
+      </div>
+    </div>
+
+    <!-- Nút hành động -->
+    <div class="d-flex justify-content-between mt-4">
+      <button type="submit" class="btn btn-success" [disabled]="form.invalid">
+        ✅ {{ isEdit ? 'Cập nhật' : 'Thêm mới' }}
+      </button>
+      <button type="button" class="btn btn-outline-secondary" (click)="router.navigate(['/admin/students'])">
+        ⬅️ Quay lại
+      </button>
+    </div>
+  </form>
+</div>

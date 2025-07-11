@@ -1,0 +1,67 @@
+<div class="container mt-4">
+  <h2 class="text-primary fw-bold mb-4">📊 Tiến độ học tập</h2>
+
+  <!-- 🔙 Nút quay lại -->
+  <a class="btn btn-outline-secondary btn-sm mb-4" (click)="goBack()">⬅️ Quay lại trang chính</a>
+
+  <!-- Thông báo lỗi -->
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <!-- Nội dung tiến độ -->
+  <div *ngIf="progress" class="row g-4">
+
+    <!-- ✅ Đã đăng ký -->
+    <div class="col-md-4">
+      <a [routerLink]="['/student/schedule-score']" [queryParams]="{ tab: 'schedule' }" class="text-decoration-none">
+        <div class="card border-success border-2 shadow-sm hover-shadow">
+          <div class="card-body text-center">
+            <h6 class="text-muted mb-1">Đã đăng ký</h6>
+            <h2 class="text-success">{{ progress.registeredSubjects }}</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 🎓 Hoàn thành -->
+    <div class="col-md-4">
+      <a [routerLink]="['/student/schedule-score']" [queryParams]="{ tab: 'completed' }" class="text-decoration-none">
+        <div class="card border-warning border-2 shadow-sm hover-shadow">
+          <div class="card-body text-center">
+            <h6 class="text-muted mb-1">Hoàn thành</h6>
+            <h2 class="text-warning">{{ progress.completedSubjects }}</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- ⏳ Chưa hoàn thành -->
+<!-- ⏳ Chưa hoàn thành -->
+<div class="col-md-4">
+  <a [routerLink]="['/student/schedule-score']" [queryParams]="{ tab: 'passed' }" class="text-decoration-none">
+    <div class="card shadow-sm border-secondary border-2 hoverable-card">
+      <div class="card-body text-center">
+        <h5 class="text-muted">Chưa hoàn thành</h5>
+        <h2 class="text-secondary">
+          {{ (progress.registeredSubjects || 0) - (progress.completedSubjects || 0) }}
+        </h2>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+    <!-- ⭐ GPA -->
+    <div class="col-md-4">
+      <div class="card border-dark border-2 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="text-muted mb-1">GPA</h6>
+          <h2 class="text-dark fw-bold">{{ progress.gpa | number:'1.2-2' }}</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

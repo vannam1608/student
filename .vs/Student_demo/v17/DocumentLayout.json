@@ -1,0 +1,423 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\services\\studentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\services\\studentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\scorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\scorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\authorization\\permissionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\authorization\\permissionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\interfaces\\istudentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\interfaces\\istudentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\interfaces\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\interfaces\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\interfaces\\isubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\interfaces\\isubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\shared\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\shared\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\studentprogressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\studentprogressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\registersubjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\registersubjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\inputscoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\inputscoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\inputpartialscoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\inputpartialscoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Program.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Program.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Program.cs",
+              "RelativeToolTip": "Student_demo\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T08:11:44.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScoreController.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\ScoreController.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Controllers\\ScoreController.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\ScoreController.cs",
+              "RelativeToolTip": "Student_demo\\Controllers\\ScoreController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAmwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T02:45:15.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PermissionRequirement.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Authorization\\PermissionRequirement.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Authorization\\PermissionRequirement.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Authorization\\PermissionRequirement.cs",
+              "RelativeToolTip": "Student_demo\\Authorization\\PermissionRequirement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T08:52:33.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\ISubjectService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Interfaces\\ISubjectService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\ISubjectService.cs",
+              "RelativeToolTip": "Student_demo\\Interfaces\\ISubjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:20:54.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\IBaseService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Interfaces\\IBaseService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\IBaseService.cs",
+              "RelativeToolTip": "Student_demo\\Interfaces\\IBaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:18:22.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Student_demo\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:16:59.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentSubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentSubjectService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Services\\StudentSubjectService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentSubjectService.cs",
+              "RelativeToolTip": "Student_demo\\Services\\StudentSubjectService.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAkwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:19:12.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Student_demo\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T02:46:18.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\appsettings.json",
+              "RelativeDocumentMoniker": "Student_demo\\appsettings.json",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\appsettings.json",
+              "RelativeToolTip": "Student_demo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T08:11:33.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "Student_demo\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:18:31.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\StudentDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\StudentDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:15.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SubjectController.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\SubjectController.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Controllers\\SubjectController.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\SubjectController.cs",
+              "RelativeToolTip": "Student_demo\\Controllers\\SubjectController.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAmwMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T01:21:32.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IStudentSubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\IStudentSubjectService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Interfaces\\IStudentSubjectService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Interfaces\\IStudentSubjectService.cs",
+              "RelativeToolTip": "Student_demo\\Interfaces\\IStudentSubjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:31:34.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\SubjectService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Services\\SubjectService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\SubjectService.cs",
+              "RelativeToolTip": "Student_demo\\Services\\SubjectService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwIMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:19:13.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Shared\\BaseService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Shared\\BaseService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Shared\\BaseService.cs",
+              "RelativeToolTip": "Student_demo\\Shared\\BaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:18:51.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StudentProgressDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\StudentProgressDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\StudentProgressDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\StudentProgressDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\StudentProgressDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:16:42.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentService.cs",
+              "RelativeToolTip": "Student_demo\\Services\\StudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:10:42.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Models\\Subject.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Models\\Subject.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Models\\Subject.cs",
+              "RelativeToolTip": "Student_demo\\Models\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:10:23.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Models\\Student.cs",
+              "RelativeToolTip": "Student_demo\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:26.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SubjectDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\SubjectDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\SubjectDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\SubjectDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\SubjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:16.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterSubjectDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\RegisterSubjectDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\RegisterSubjectDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\RegisterSubjectDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\RegisterSubjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:14.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:13.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InputScoreDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\InputScoreDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\InputScoreDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\InputScoreDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\InputScoreDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:12.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "InputPartialScoreDto.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\InputPartialScoreDto.cs",
+              "RelativeDocumentMoniker": "Student_demo\\DTOs\\InputPartialScoreDto.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\InputPartialScoreDto.cs",
+              "RelativeToolTip": "Student_demo\\DTOs\\InputPartialScoreDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:09:11.917Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

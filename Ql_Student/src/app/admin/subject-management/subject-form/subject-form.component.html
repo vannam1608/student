@@ -1,0 +1,68 @@
+<div class="container mt-4">
+  <h2>{{ isEdit ? 'Chỉnh sửa' : 'Thêm mới' }} môn học</h2>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" class="mt-4">
+    <div class="row g-3">
+      <!-- Tên môn học -->
+      <div class="col-md-6">
+        <label for="name" class="form-label">Tên môn học</label>
+        <input id="name" type="text" formControlName="name" class="form-control" />
+      </div>
+
+      <!-- Số tín chỉ -->
+      <div class="col-md-3">
+        <label for="credit" class="form-label">Tín chỉ</label>
+        <input id="credit" type="number" formControlName="credit" class="form-control" min="1" />
+      </div>
+
+      <!-- Số buổi học -->
+      <div class="col-md-3">
+        <label for="sessionCount" class="form-label">Số buổi học</label>
+        <input id="sessionCount" type="number" formControlName="sessionCount" class="form-control" min="1" />
+      </div>
+
+      <!-- Trọng số quá trình -->
+      <div class="col-md-3">
+        <label for="processWeight" class="form-label">Trọng số quá trình (%)</label>
+        <input id="processWeight" type="number" formControlName="processWeight" class="form-control" min="0" max="100" />
+      </div>
+
+      <!-- Trọng số thành phần -->
+      <div class="col-md-3">
+        <label for="componentWeight" class="form-label">Trọng số thành phần (%)</label>
+        <input id="componentWeight" type="number" formControlName="componentWeight" class="form-control" min="0" max="100" />
+      </div>
+
+      <!-- Ngày bắt đầu -->
+      <div class="col-md-3">
+        <label for="startDate" class="form-label">Ngày bắt đầu</label>
+        <input id="startDate" type="date" formControlName="startDate" class="form-control" />
+      </div>
+
+      <!-- Giờ học -->
+      <div class="col-md-3">
+        <label for="studyTime" class="form-label">Giờ học</label>
+        <input id="studyTime" type="time" formControlName="studyTime" class="form-control" />
+      </div>
+
+      <!-- Ngày thi -->
+      <div class="col-md-3">
+        <label for="examDate" class="form-label">Ngày thi</label>
+        <input id="examDate" type="date" formControlName="examDate" class="form-control" />
+      </div>
+
+      <!-- Giờ thi -->
+      <div class="col-md-3">
+        <label for="examTime" class="form-label">Giờ thi</label>
+        <input id="examTime" type="time" formControlName="examTime" class="form-control" />
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <button type="submit" class="btn btn-primary me-2" [disabled]="form.invalid">
+        {{ isEdit ? 'Cập nhật' : 'Thêm mới' }}
+      </button>
+      <a [routerLink]="['/admin/subjects']" class="btn btn-secondary">Quay lại</a>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <h3>📚 Môn học có thể đăng ký</h3>
+  <div *ngIf="availableSubjects.length === 0">🎉 Bạn đã đăng ký hết tất cả môn học!</div>
+
+  <ul class="list-group mb-4">
+    <li *ngFor="let subject of availableSubjects" class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong>{{ subject.name }}</strong> ({{ subject.credit }} TC)<br />
+        🗓️ Ngày bắt đầu: <span>{{ subject.startDate | date:'dd/MM/yyyy' }}</span>
+      </div>
+      <button class="btn btn-sm btn-success" (click)="register(subject.id)">Đăng ký</button>
+    </li>
+  </ul>
+
+  <div class="container mt-4">
+  <div class="card shadow">
+    <div class="card-header bg-success text-white">
+      <h5 class="mb-0">✅ Môn học đã đăng ký</h5>
+    </div>
+    <div class="card-body">
+      <ul class="list-group">
+        <li *ngFor="let subject of registeredSubjects" class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <strong>{{ subject.name }}</strong><br />
+            <small>
+              📅 Bắt đầu: {{ subject.startDate | date:'dd/MM/yyyy' }}<br />
+              📝 Thi: {{ subject.examDate | date:'dd/MM/yyyy' }}
+            </small>
+          </div>
+          <span class="badge bg-primary rounded-pill">{{ subject.credit }} tín chỉ</span>
+        </li>
+      </ul>
+
+      <div *ngIf="registeredSubjects.length === 0" class="alert alert-warning mt-3">
+        ⚠️ Bạn chưa đăng ký môn học nào.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

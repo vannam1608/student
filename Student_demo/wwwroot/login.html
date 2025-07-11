@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập hệ thống</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 100px auto;
+            width: 300px;
+            text-align: center;
+        }
+
+        input, button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Đăng nhập</h2>
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Mật khẩu">
+    <button onclick="login()">Đăng nhập</button>
+
+    <script>
+        async function login() {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!email || !password) {
+                alert("Vui lòng nhập đầy đủ email và mật khẩu.");
+                return;
+            }
+
+            try {
+                const res = await fetch('/api/Auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    localStorage.setItem("token", data.token);
+                    window.location.href = "index.html";
+                } else {
+                    alert("Lỗi: " + (typeof data === "string" ? data : "Sai thông tin đăng nhập"));
+                }
+            } catch (error) {
+                alert("Không thể kết nối đến máy chủ: " + error.message);
+            }
+        }
+    </script>
+</body>
+</html>
