@@ -48,7 +48,7 @@ jobs:
 
       - name: 🔧 Build Angular App
         working-directory: ./Ql_Student
-        run: npm run build -- --configuration production
+        run: npm run build -- --configuration production --base-href /student/
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
