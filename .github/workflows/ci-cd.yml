@@ -42,9 +42,9 @@ jobs:
         with:
           node-version: '18'
 
-      - name: 📦 Install dependencies
+      - name: 📦 Install dependencies (fix peer conflict)
         working-directory: ./Ql_Student
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: 🔧 Build Angular App
         working-directory: ./Ql_Student
