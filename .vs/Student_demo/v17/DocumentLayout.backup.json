@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\services\\studentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\services\\studentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\scorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\scorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\scorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\controllers\\scorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\services\\studentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|solutionrelative:student_demo\\services\\studentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{109BCDAA-EF77-4F2A-AFCB-8BB62E45C943}|Student_demo\\Student_demo.csproj|c:\\users\\phamv\\onedrive\\desktop\\demo\\demo\\demo\\student_demo\\student_demo\\interfaces\\istudentsubjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Program.cs",
               "RelativeDocumentMoniker": "Student_demo\\Program.cs",
@@ -140,30 +140,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\appsettings.json",
-              "RelativeDocumentMoniker": "Student_demo\\appsettings.json",
-              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\appsettings.json",
-              "RelativeToolTip": "Student_demo\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T08:11:33.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Student_demo\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Student_demo\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T02:46:18.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ScoreController.cs",
               "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\ScoreController.cs",
               "RelativeDocumentMoniker": "Student_demo\\Controllers\\ScoreController.cs",
@@ -171,11 +147,12 @@
               "RelativeToolTip": "Student_demo\\Controllers\\ScoreController.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAmwIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T02:45:15.028Z"
+              "WhenOpened": "2025-07-10T02:45:15.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PermissionRequirement.cs",
               "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Authorization\\PermissionRequirement.cs",
               "RelativeDocumentMoniker": "Student_demo\\Authorization\\PermissionRequirement.cs",
@@ -211,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Student_demo\\Controllers\\StudentController.cs",
@@ -220,6 +197,43 @@
               "ViewState": "AgIAADwAAAAAAAAAAAAIwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T02:16:59.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentSubjectService.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentSubjectService.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Services\\StudentSubjectService.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentSubjectService.cs",
+              "RelativeToolTip": "Student_demo\\Services\\StudentSubjectService.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAkwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T02:19:12.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Student_demo\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Student_demo\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T02:46:18.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\appsettings.json",
+              "RelativeDocumentMoniker": "Student_demo\\appsettings.json",
+              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\appsettings.json",
+              "RelativeToolTip": "Student_demo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T08:11:33.455Z"
             },
             {
               "$type": "Document",
@@ -235,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "StudentDto.cs",
               "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\DTOs\\StudentDto.cs",
               "RelativeDocumentMoniker": "Student_demo\\DTOs\\StudentDto.cs",
@@ -247,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SubjectController.cs",
               "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Controllers\\SubjectController.cs",
               "RelativeDocumentMoniker": "Student_demo\\Controllers\\SubjectController.cs",
@@ -268,18 +282,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T02:31:34.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StudentSubjectService.cs",
-              "DocumentMoniker": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentSubjectService.cs",
-              "RelativeDocumentMoniker": "Student_demo\\Services\\StudentSubjectService.cs",
-              "ToolTip": "C:\\Users\\phamv\\OneDrive\\Desktop\\demo\\demo\\demo\\Student_demo\\Student_demo\\Services\\StudentSubjectService.cs",
-              "RelativeToolTip": "Student_demo\\Services\\StudentSubjectService.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAADwv5gAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T02:19:12.172Z"
             },
             {
               "$type": "Document",

@@ -29,7 +29,7 @@ jobs:
         run: dotnet test ./Student_demo --no-build --verbosity normal
 
   deploy:
-    name: 🚀 Deploy static UI to GitHub Pages
+    name: 🚀 Build Angular & Deploy to GitHub Pages
     runs-on: ubuntu-latest
     needs: build-and-test-backend
 
@@ -37,10 +37,23 @@ jobs:
       - name: 📥 Checkout code
         uses: actions/checkout@v3
 
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 📦 Install dependencies
+        working-directory: ./Ql_Student
+        run: npm install
+
+      - name: 🔧 Build Angular App
+        working-directory: ./Ql_Student
+        run: npm run build -- --configuration production
+
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Ql_Student/dist
+          publish_dir: ./Ql_Student/dist/ql-student
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
